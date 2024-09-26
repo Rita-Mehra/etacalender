@@ -1,0 +1,281 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-24 {
+  font-size: 24px;
+}
+
+.font-20 {
+  font-size: 20px;
+}
+
+.font-17 {
+  font-size: 17px;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+
+.font-13 {
+  font-size: 13px !important;
+}
+
+.text-primary {
+  color: #2f4eff;
+}
+
+.text-black {
+  color: #000000;
+}
+
+.text-gray {
+  color: #777777;
+}
+
+.text-black {
+  color: #595959;
+}
+
+.gray-br {
+  border-color: #e2e2e2 !important;
+}
+
+.blue-br {
+  border-color: #2f4eff !important;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  font-family: "Outfit", sans-serif;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Outfit", sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.mobile-view {
+  display: none;
+}
+
+.eta-calender-wrapper {
+  height: 100%;
+  position: relative;
+  background-image: url("/images/top-blob.svg");
+  background-repeat: no-repeat;
+}
+
+.eta-calender-wrapper:before {
+  content: "";
+  height: 50%;
+  width: 100%;
+  background: linear-gradient(0deg, #f2f4ff, transparent);
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+.login-wrapper {
+  height: 100%;
+  position: relative;
+  background-image: url("/images/blob-b.svg");
+  background-repeat: no-repeat;
+}
+
+.login-wrapper:before {
+  content: "";
+  height: 50%;
+  width: 100%;
+  background: linear-gradient(0deg, #f2f4ff, transparent);
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+button.blue-button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 3rem;
+  background-color: #2f4eff;
+  color: #ffffff;
+  font-size: 17px;
+  height: 50px;
+  text-transform: capitalize;
+}
+
+button.white-button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 3rem;
+  background-color: #ffffff;
+  border: 1px solid #2f4eff;
+  font-size: 17px;
+  height: 50px;
+  text-transform: capitalize;
+  color: #2f4eff;
+}
+
+button.blue-button:hover,
+button.white-button:hover,
+button.white-button:active,
+button.blue-button:hover {
+  background-color: transparent;
+  color: #2f4eff;
+  border: 1px solid #2f4eff;
+}
+
+.social-link-container {
+  text-align: center;
+}
+
+.social-link-container img {
+  margin: auto;
+}
+
+.input-custom {
+  border: 1px solid #e2e2e2;
+  outline: 1px solid #e2e2e2;
+}
+
+.input-custom:focus {
+  border: 1px solid #2f4eff;
+  outline: 1px solid #2f4eff;
+}
+
+.social-link-container {
+  background-color: #ffffff;
+  padding: 20px;
+  max-width: 85%;
+  border-radius: 8px;
+  margin: auto;
+  box-shadow: 0 0 2rem #d8d8d8;
+}
+
+.tab-container {
+  background-color: #e9f0ff;
+}
+
+.tab-container button {
+  font-size: 16px !important;
+  color: #121a26;
+  text-transform: capitalize !important;
+  padding: 8px !important;
+  min-width: 78px !important;
+  font-weight: 400;
+}
+
+.color-box {
+  width: 146px;
+  border-radius: 9px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.blue-tiel {
+  color: #ffffff;
+  background-color: #2f4eff;
+}
+
+.light-tiel {
+  color: #030303;
+  background-color: #f2f4ff;
+}
+
+.customer-img {
+  border-radius: 100px;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.customer-img img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.CircularProgressbar-path {
+  stroke: #2f4eff !important;
+}
+
+.CircularProgressbar-trail {
+  stroke: #f2f4ff !important;
+}
+
+.green-circle .CircularProgressbar-path {
+  stroke: #00C360 !important;
+}
+
+.red-circle .CircularProgressbar-path {
+  stroke: #f7474a !important;
+}
+
+.red-purple .CircularProgressbar-path {
+  stroke: #8b54eb !important;
+}
+
+.orange-purple .CircularProgressbar-path {
+  stroke: #ffb300 !important;
+}
+
+.color-circle {
+  margin: 15px;
+}
+
+.banner-wrapper {
+  margin: 1rem;
+}
+
+.banner-wrapper img {
+  width: 100%;
+}
+
+.cross {
+  color: #ffffff;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+@media screen and (max-width: 540px) {
+  .mobile-view {
+    display: block;
+  }
+}

@@ -1,0 +1,48 @@
+// font sizes
+
+.font-24 {
+    font-size: 24px;
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+.font-17 {
+    font-size: 17px;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+.font-13 {
+    font-size: 13px !important;
+}
+
+
+// text colors
+
+.text-primary {
+    color: $primary-blue;
+}
+
+.text-black {
+    color: $black;
+}
+
+.text-gray {
+    color: $text-grey;
+}
+
+.text-black {
+    color: $textblack;
+}
+
+.gray-br {
+    border-color: $br-gray !important;
+}
+
+.blue-br {
+    border-color: $primary-blue !important;
+}
